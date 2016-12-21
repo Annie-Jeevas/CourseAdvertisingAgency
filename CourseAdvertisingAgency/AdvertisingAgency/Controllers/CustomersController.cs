@@ -86,9 +86,9 @@ namespace AdvertisingAgency.Controllers
         {
             if (ModelState.IsValid)
             {
-                AspNetUser user = customer.AspNetUser;
-                db.Entry(user).State = EntityState.Modified;
-                db.Entry(customer).State = EntityState.Modified;
+                //AspNetUser user = customer.AspNetUser;
+                //db.Entry(user).State = EntityState.Modified;
+                //db.Entry(customer).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
